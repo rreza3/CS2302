@@ -1,4 +1,4 @@
-"""
+""" #Reza, Raul: I really like the header of the lab, I'll implement it myself for future labs
 Alexis Aguirre
 CS2302: Lab 1, Option C (Decrypting Passowrds)
 Due on: 9/13/18
@@ -8,7 +8,7 @@ combinations and then hashing to decrypt a given set of hashed passwords.
 import hashlib 
 from pathlib import Path
 
-usersFile = Path("C:/Users/aagui/Documents/UTEP 6th Semester/CS2302 Data Structures/Lab 1/1.3 Passwords/1.3 Passwords/password_file.txt")       # File path with slashes edited, may be different on different OS
+usersFile = Path("C:/Users/aagui/Documents/UTEP 6th Semester/CS2302 Data Structures/Lab 1/1.3 Passwords/1.3 Passwords/password_file.txt")       # File path with slashes edited, may be different on different OS #Reza, Raul: Keep in mind it won't be compatible even in another computer, not just different OS
 hashedRecords = []      # Will hold data from given passwords file
 passwords = []      # Will hold decrypted passwords
 minLength = 3
@@ -34,7 +34,7 @@ def recPermu(currString, strLength, possChar):      # Method generates combinati
         for i in range(possChar):
             recPermu(currString + str(i), strLength - 1, possChar)
     elif (strLength == 0):
-#        if (int(currString)%200000 == 0):  # Used to keep track of calls
+#        if (int(currString)%200000 == 0):  # Used to keep track of calls . #Reza, Raul: I like the way you tested your method here
 #            print(currString)
         lookupPassword(currString)
 
